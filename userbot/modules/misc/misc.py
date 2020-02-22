@@ -12,14 +12,14 @@ from userbot.events import register
 
 @register(outgoing=True, pattern="^.creator$")
 async def creator(e):
-    await e.edit("Here's my God: [Hitalo](https://t.me/HitaloSama)")
+    await e.edit("Creator: [Rizkyーデス](https://t.me/AkameNFS)")
 
 
 @register(outgoing=True, pattern="^\.repo$")
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        f"Click [here](https://github.com/HitaloKun/TG-UBotX) to open my userbot's repository.")
+        f"Click [here](https://github.com/RizkyNFS/RizkyBot) to open my userbot's repository.")
 
 
 @register(outgoing=True, pattern="^.uwiki$")
