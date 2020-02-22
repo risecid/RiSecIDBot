@@ -11,7 +11,7 @@ from userbot import bot
 from userbot.events import register
 
 
-@register(outgoing=True, pattern="^.qu(?: |$)(.*)")
+@register(outgoing=True, pattern="^.q(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return 
@@ -27,7 +27,7 @@ async def _(event):
     if reply_message.sender.bot:
        await event.edit("`Reply to actual users message.`")
        return
-    await event.edit("`Making a Quote...`")
+    await event.edit("`Mengubah Menjadi Stiker...`")
     async with bot.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=1031952739))
