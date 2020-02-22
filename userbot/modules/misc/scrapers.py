@@ -41,8 +41,8 @@ from userbot.events import register
 from userbot.modules.misc.upload_download import progress, humanbytes, time_formatter
 
 CARBONLANG = "auto"
-TTS_LANG = "en"
-TRT_LANG = "en"
+TTS_LANG = "id"
+TRT_LANG = "id"
 
 
 @register(outgoing=True, pattern="^.img (.*)")
