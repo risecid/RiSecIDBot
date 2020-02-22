@@ -22,9 +22,9 @@ except PhoneNumberInvalidError:
 for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
-LOGS.info("You are running TG-UBotX")
+LOGS.info("You are running RizkyBot")
 
-LOGS.info("UBotX is alive! Test it by typing .alive on any chat.")
+LOGS.info("RizkyNot Telah Aktif! Silahkan Tes Ketik .on Di Chat Manapun.")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
