@@ -116,18 +116,37 @@ async def pipcheck(pip):
         await pip.edit("`Use .help pip to see an example`")
 
 
-@register(outgoing=True, pattern="^\.alive$")
-async def amireallyalive(alive):
+@register(outgoing=True, pattern="^\.on$")
+async def amireallyon(on):
     """ For .alive command, check if the bot is running.  """
-    await alive.edit(
-                     "**UBotX is alive!**\n\n"
-                     f"**Telethon version:** `{version.__version__}` \n"
-                     f"**Python version:** `{python_version()}` \n"
-                     f"**UBotX version:** `{VERSION}` \n"
-                     f"**Source:** [HERE](https://github.com/HitaloKun/TG-UBotX) \n\n"
-                     f"**Modules loaded:** `{len(ALL_MODULES)}` \n"
-                     f"**User:** `{DEFAULTUSER}`"
-                     )
+    await on.edit(
+                     "Hi Master \n"
+                     "Bot Telah Aktif! \n"
+                     f"------------------------------------ \n"
+                     f"⡆⣐⢕⢕⢕⢕⢕⢕⢕⢕⠅⢗⢕⢕⢕⢕⢕⢕⢕⠕⠕⢕⢕⢕⢕⢕⢕⢕⢕⢕ \n"
+					 f"⢐⢕⢕⢕⢕⢕⣕⢕⢕⠕⠁⢕⢕⢕⢕⢕⢕⢕⢕⠅⡄⢕⢕⢕⢕⢕⢕⢕⢕⢕ \n"
+					 f"⢕⢕⢕⢕⢕⠅⢕⢕⠕⣠⠄⣗⢕⢕⠕⢕⢕⢕⠕⢠⣿⠐⢕⢕⢕⠑⢕⢕⠵⢕ \n"
+					 f"⢕⢕⢕⢕⠁⢜⠕⢁⣴⣿⡇⢓⢕⢵⢐⢕⢕⠕⢁⣾⢿⣧⠑⢕⢕⠄⢑⢕⠅⢕ \n"
+					 f"⢕⢕⠵⢁⠔⢁⣤⣤⣶⣶⣶⡐⣕⢽⠐⢕⠕⣡⣾⣶⣶⣶⣤⡁⢓⢕⠄⢑⢅⢑ \n"
+ 					 f"⠍⣧⠄⣶⣾⣿⣿⣿⣿⣿⣿⣷⣔⢕⢄⢡⣾⣿⣿⣿⣿⣿⣿⣿⣦⡑⢕⢤⠱⢐ \n"
+					 f"⢠⢕⠅⣾⣿⠋⢿⣿⣿⣿⠉⣿⣿⣷⣦⣶⣽⣿⣿⠈⣿⣿⣿⣿⠏⢹⣷⣷⡅⢐ \n"
+					 f"⣔⢕⢥⢻⣿⡀⠈⠛⠛⠁⢠⣿⣿⣿⣿⣿⣿⣿⣿⡀⠈⠛⠛⠁⠄⣼⣿⣿⡇⢔ \n"
+ 					 f"⢕⢕⢽⢸⢟⢟⢖⢖⢤⣶⡟⢻⣿⡿⠻⣿⣿⡟⢀⣿⣦⢤⢤⢔⢞⢿⢿⣿⠁⢕ \n"
+ 					 f"⢕⢕⠅⣐⢕⢕⢕⢕⢕⣿⣿⡄⠛⢀⣦ ⠛⢁⣼⣿⢗⢕⢕⢕⢕⢕⢕⡏⣘⢕ \n"
+					 f"⢕⢕⠅⢓⣕⣕⣕⣕⣵⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣷⣕⢕⢕⢕⢕⡵⢀⢕⢕ \n"
+					 f"⢑⢕⠃⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢃⢕⢕⢕ \n"
+					 f"⣆⢕⠄⢱⣄⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⢁⢕⢕⠕⢁ \n"
+                     f"⣿⣦⡀⣿⣿⣷⣶⣬⣍⣛⣛⣛⡛⠿⠿⠿⠛⠛⢛⣛⣉⣭⣤⣂⢜⠕⢑⣡⣴⣿ \n"  
+                     f"------------------------------------ \n"
+                     f"Versi Telethon: {version.__version__} \n"
+                     f"Python: {python_version()} \n"
+                     f"------------------------------------ \n"
+                     f"Info User \n"
+                     f"Nama: {DEFAULTUSER} \n"
+                     f"------------------------------------ \n"
+		             f"Creator: t.me/AkameNFS \n"
+		             f"------------------------------------ \n"
+                     "`")
 
 
 @register(outgoing=True, pattern="^\.aliveu")
